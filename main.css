@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a:link{
+    text-decoration:none;
+}
+
+html,
+body {
+    background-color: #181A1B;
+    color: antiquewhite;
+    min-height: 100vh;
+
+}
+
+.top-bar {
+    background-color: #26292B;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.featured-news ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.top-bar-title {
+    color: #FF342F;
+
+
+
+}
+
+.editorials ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.main-bar {
+    background-color: #A40000;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-slider {}
+
+.logo {
+    color: antiquewhite;
+
+
+
+}
+
+.usearea {
+    display: flex;
+
+}
+
+.login {}
+
+.register {}
+
+.header-menu ul {
+    list-style: none;
+    background-color: hsl(204, 6%, 16%);
+    display: flex;
+    justify-content: space-evenly;
+
+
+
+}
+
+.two-columns-aside {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.news-gallery {}
+
+.one-column {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.one-column image {
+    width: 730px;
+    height: 438px;
+
+}
+
+.news {}
+
+.news-image {}
+
+.news-categories {}
+
+.news-title {}
+
+.news-description {}
+
+.news-author {}
+
+.four-columns {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.four-columns img {
+    width: 172px;
+    height: 115px;
+
+}
+
+.news-blog {}
+
+.blog-card-image {}
+
+.subscription-link {}
+
+.two-columns {
+    display: flex;
+}
+
+.two-columns img {
+    width: 350px;
+    height: 200px;
+
+}
+
+.news-with-list {}
+
+.news-list ul {
+    list-style: none;
+
+}
+
+.ads {
+    justify-content: flex-end;
+
+
+}
