@@ -5,19 +5,33 @@
 
 a:link {
     text-decoration: none;
+
 }
+
+a {
+    color: hsl(38, 9%, 76%);
+
+}
+
 h1 {
     font-size: 2.05rem;
-    line-height: 1.15em;}
+    line-height: 1.15em;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
 html,
 body {
     background-color: hsl(200, 6%, 10%);
-    color: antiquewhite;
     min-height: 100vh;
-    font-family: Roboto,"Helvetica Neue",Arial;
+    font-family: Roboto, "Helvetica Neue", Arial;
     font-weight: 400;
     font-size: 1rem;
-
+   
+    
 }
 
 .top-bar {
@@ -27,7 +41,7 @@ body {
     padding: 0.5rem 15%;
     width: 70%;
     align-items: center;
-   
+
 }
 
 .featured-news ul {
@@ -37,9 +51,16 @@ body {
     gap: 1em;
     font-size: small;
 }
+.featured-news a{
+    font-weight: 600;
+}
+.featured-news ul li:not(:first-child):not(:last-child)::after {
+    content: "-";
+    margin-left: 0.3rem;
+}
 
 .top-bar-title {
-    color: #FF342F;
+    color: hsl(1, 100%, 59%);
 }
 
 .editorials ul {
@@ -47,7 +68,13 @@ body {
     justify-content: space-between;
     display: flex;
     gap: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    
+}
+.editorials ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 0.3rem;
 }
 
 .main-bar {
@@ -56,28 +83,33 @@ body {
     justify-content: space-between;
     gap: 1em;
     padding: 1% 15%;
-   
+    align-items: center;
+
+
+
 }
 
 .main-slider svg {
     width: 3rem;
+    fill: hsl(0, 0%, 8%);
+
 }
 
 .logo svg {
     width: 20rem;
+    fill: hsl(0, 0%, 100%);
+    transform: translateX(20%);
 }
 
 .userarea {
     display: flex;
     align-items: center;
     gap: 0.5em;
-    
+
 
 }
 
-.login {
-    
-}
+.login {}
 
 .login button {
     height: 2rem;
@@ -86,7 +118,7 @@ body {
     border-radius: 0.2rem;
     display: flex;
     align-items: center;
-    background-color:  hsl(204, 6%, 16%);
+    background-color: hsl(204, 6%, 16%);
 
 }
 
@@ -102,6 +134,7 @@ body {
     border-radius: 0.2rem;
     height: 2rem;
     align-items: center;
+    font-style: italic;
 }
 
 .header-menu ul {
@@ -112,13 +145,14 @@ body {
     width: 70%;
     align-items: center;
     justify-content: space-between;
-    
+    font-weight: 600;
 
 }
 
 .header-menu svg {
     width: 1.5rem;
-
+    fill: hsl(0, 0%, 100%);
+    
 }
 
 .two-columns-aside {
@@ -126,32 +160,46 @@ body {
     justify-content: center;
     padding: 0 15%;
     width: 70%;
+    gap: 5rem;
 
 }
 
-.news-gallery {}
+.news-gallery {
+    flex: 2;
+}
 
 .one-column {
     display: flex;
     justify-content: flex-start;
-}
-
-.one-column img {
-    width: 730px;
-    height: 438px;
+    margin-top: 2.5%;
 }
 
 .news {}
 
 .news-image {}
 
-.news-categories {}
+.news-categories a {
+    color: hsl(1, 100%, 59%);
+    font-size: 1em;
+}
 
-.news-title {}
+.news-title :hover {
+    color: hsl(1, 100%, 59%);
 
-.news-description {}
+}
 
-.news-author {}
+.news-description p{ 
+    display: flex;
+    gap: 0.3rem;  
+    margin-right: 20%;              
+    
+}
+
+.news-author a{
+    font-size: 1rem;
+    
+  
+}
 
 .four-columns {
     display: flex;
@@ -165,45 +213,67 @@ body {
 
 }
 
-.news-blog {}
+.news-blog div { 
+    display: flex;
+    justify-content: center;
+}
 
 .blog-card-image {}
 
-.subscription-link {}
+.subscription-image {
+    max-width: 40px;
+    max-height: 20px;
+  
+}
 
 .two-columns {
     display: flex;
-    gap: 1em;
+    gap: 2.5em;
     width: 70%;
-    
+
 
 }
 
 .two-columns img {
     width: 350px;
     height: 200px;
+    
 
 }
 
 .news-with-list {
-    width: 70%;
-}
+    
+    color: red;
 
+}
+.news-list :hover{
+    color: hsl(1, 100%, 59%);
+
+}
 .news-list ul {
-    color: hsl(0, 100%, 32%);
     list-style-type: square;
+    margin-left: 5%;
 }
 
 .ads {
-    justify-content: flex-end;
+    flex: 1;
+    min-height: 100vh;
+}
 
+.ads img{
+    object-fit: cover;
+    position: sticky;
+    top: 20vh;
 }
 
 .four-columns-footer {
     display: flex;
-    gap: 1em;
     padding: 0 15%;
+    width: 70%;
     
+  
+   
+
 }
 
 .four-columns-footer img {
