@@ -18,7 +18,7 @@ h1 {
     line-height: 1.15em;
 }
 
-img{
+img {
     object-fit: cover;
     width: 100%;
 }
@@ -30,8 +30,8 @@ body {
     font-family: Roboto, "Helvetica Neue", Arial;
     font-weight: 400;
     font-size: 1rem;
-   
-    
+
+
 }
 
 .top-bar {
@@ -51,9 +51,11 @@ body {
     gap: 1em;
     font-size: small;
 }
-.featured-news a{
+
+.featured-news a {
     font-weight: 600;
 }
+
 .featured-news ul li:not(:first-child):not(:last-child)::after {
     content: "-";
     margin-left: 0.3rem;
@@ -70,8 +72,9 @@ body {
     gap: 1rem;
     font-size: 0.75rem;
     font-weight: 600;
-    
+
 }
+
 .editorials ul li:not(:last-child)::after {
     content: "|";
     margin-left: 0.3rem;
@@ -86,12 +89,11 @@ body {
     align-items: center;
 
 
-
 }
 
 .main-slider svg {
     width: 3rem;
-    fill: hsl(0, 0%, 8%);
+    fill: black;
 
 }
 
@@ -152,7 +154,7 @@ body {
 .header-menu svg {
     width: 1.5rem;
     fill: hsl(0, 0%, 100%);
-    
+  
 }
 
 .two-columns-aside {
@@ -188,17 +190,18 @@ body {
 
 }
 
-.news-description p{ 
+.news-description p {
     display: flex;
-    gap: 0.3rem;  
-    margin-right: 20%;              
-    
+    gap: 0.3rem;
+    margin-right: 20%;
+    color: hsl(38, 9%, 76%);  
+
 }
 
-.news-author a{
+.news-author a {
     font-size: 1rem;
-    
-  
+
+
 }
 
 .four-columns {
@@ -207,13 +210,8 @@ body {
 
 }
 
-.four-columns img {
-    width: 172px;
-    height: 115px;
 
-}
-
-.news-blog div { 
+.news-blog div {
     display: flex;
     justify-content: center;
 }
@@ -223,7 +221,7 @@ body {
 .subscription-image {
     max-width: 40px;
     max-height: 20px;
-  
+
 }
 
 .two-columns {
@@ -237,19 +235,21 @@ body {
 .two-columns img {
     width: 350px;
     height: 200px;
-    
+
 
 }
 
 .news-with-list {
-    
+
     color: red;
 
 }
-.news-list :hover{
+
+.news-list :hover {
     color: hsl(1, 100%, 59%);
 
 }
+
 .news-list ul {
     list-style-type: square;
     margin-left: 5%;
@@ -258,26 +258,24 @@ body {
 .ads {
     flex: 1;
     min-height: 100vh;
+   
 }
 
-.ads img{
+.ads img {
     object-fit: cover;
     position: sticky;
     top: 20vh;
+   
 }
 
 .four-columns-footer {
     display: flex;
     padding: 0 15%;
     width: 70%;
-    
-  
-   
+    gap: 6rem;
+    flex: 1;
+
+
 
 }
 
-.four-columns-footer img {
-    width: 172px;
-    height: 115px;
-
-}
