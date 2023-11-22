@@ -10,7 +10,6 @@ a:link {
 
 a {
     color: hsl(38, 9%, 76%);
-
 }
 
 h1 {
@@ -52,13 +51,16 @@ body {
     font-size: small;
 }
 
-.featured-news a {
+.featured-news {
     font-weight: 600;
+    color: hsl(38, 9%, 76%);
+
 }
 
 .featured-news ul li:not(:first-child):not(:last-child)::after {
     content: "-";
     margin-left: 0.3rem;
+
 }
 
 .top-bar-title {
@@ -72,6 +74,7 @@ body {
     gap: 1rem;
     font-size: 0.75rem;
     font-weight: 600;
+    color: hsl(38, 9%, 76%);
 
 }
 
@@ -81,26 +84,30 @@ body {
 }
 
 .main-bar {
-    background-color: hsl(0, 100%, 32%);
+    background-color: hsl(0, 100%, 40%);
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    padding: 1% 15%;
+    padding: 1.3% 15%;
     align-items: center;
-
-
 }
 
 .main-slider svg {
     width: 3rem;
-    fill: black;
 
+}
+
+.main-slider a svg path {
+    fill: black;
 }
 
 .logo svg {
     width: 20rem;
-    fill: hsl(0, 0%, 100%);
     transform: translateX(20%);
+}
+
+.logo svg path {
+    fill: hsl(0, 0%, 100%);
 }
 
 .userarea {
@@ -115,12 +122,14 @@ body {
 
 .login button {
     height: 2rem;
-    justify-self: flex-start;
+    justify-content: center;
     border: none;
     border-radius: 0.2rem;
     display: flex;
     align-items: center;
     background-color: hsl(204, 6%, 16%);
+    color: hsl(48, 26%, 93%);
+    width: 8rem;
 
 }
 
@@ -137,6 +146,13 @@ body {
     height: 2rem;
     align-items: center;
     font-style: italic;
+    color: hsl(48, 26%, 93%);
+    width: 8rem;
+}
+
+.header-menu {
+    border-bottom: 3px solid hsl(0, 1%, 36%);
+    border-top: 3px solid hsl(200, 6%, 10%);
 }
 
 .header-menu ul {
@@ -154,7 +170,8 @@ body {
 .header-menu svg {
     width: 1.5rem;
     fill: hsl(0, 0%, 100%);
-  
+    padding-top: 22%;
+
 }
 
 .two-columns-aside {
@@ -163,8 +180,9 @@ body {
     padding: 0 15%;
     width: 70%;
     gap: 5rem;
-
+    margin-bottom: 3%;
 }
+
 
 .news-gallery {
     flex: 2;
@@ -174,11 +192,16 @@ body {
     display: flex;
     justify-content: flex-start;
     margin-top: 2.5%;
+
 }
 
-.news {}
+.news {
+    margin-bottom: 5%;
+}
 
-.news-image {}
+.news-image {
+    margin-bottom: 5%;
+}
 
 .news-categories a {
     color: hsl(1, 100%, 59%);
@@ -194,7 +217,7 @@ body {
     display: flex;
     gap: 0.3rem;
     margin-right: 20%;
-    color: hsl(38, 9%, 76%);  
+    color: hsl(38, 9%, 76%);
 
 }
 
@@ -207,21 +230,40 @@ body {
 .four-columns {
     display: flex;
     gap: 1em;
-
+    margin-bottom: 5%;
 }
 
+.four-columns img {
+    margin-bottom: 10%;
+}
 
 .news-blog div {
     display: flex;
     justify-content: center;
+    gap: 1em;
+    
 }
 
-.blog-card-image {}
 
-.subscription-image {
+.blog-card-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+
+}
+
+.subscription-link img {
     max-width: 40px;
     max-height: 20px;
 
+}
+
+.blog-author {
+    font-size: 0.8em;
+}
+
+.blog-description :hover {
+    color: hsl(1, 100%, 59%);
 }
 
 .two-columns {
@@ -235,7 +277,7 @@ body {
 .two-columns img {
     width: 350px;
     height: 200px;
-
+    margin-bottom: 5%;
 
 }
 
@@ -253,19 +295,25 @@ body {
 .news-list ul {
     list-style-type: square;
     margin-left: 5%;
+
+}
+
+.news-list ul li {
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .ads {
     flex: 1;
     min-height: 100vh;
-   
+
 }
 
 .ads img {
     object-fit: cover;
     position: sticky;
     top: 20vh;
-   
+
 }
 
 .four-columns-footer {
@@ -275,7 +323,8 @@ body {
     gap: 6rem;
     flex: 1;
 
-
-
 }
 
+.four-columns-footer img {
+    margin-bottom: 5%;
+}
