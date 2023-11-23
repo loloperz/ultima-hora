@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
-
+button{
+    cursor: pointer;
+}
 a:link {
     text-decoration: none;
 
@@ -121,7 +125,7 @@ body {
 .login {}
 
 .login button {
-    height: 2rem;
+    
     justify-content: center;
     border: none;
     border-radius: 0.2rem;
@@ -129,8 +133,7 @@ body {
     align-items: center;
     background-color: hsl(204, 6%, 16%);
     color: hsl(48, 26%, 93%);
-    width: 8rem;
-
+    padding: 0.2rem 0.3rem;
 }
 
 .login svg {
@@ -244,7 +247,7 @@ body {
 .news-blog div {
     display: flex;
     justify-content: center;
-    
+    flex: 4;
 }
 
 .blog-card-image img {
@@ -268,12 +271,12 @@ body {
 }
 
 .blog-author a {
-    font-size: 0.8em;
+
     border-bottom: 2px solid hsl(0, 1%, 36%);
    color: hsl(1, 100%, 59%);
 }
 .blog-description{
-   font-size: 0.8em;
+  flex: 4;
 }
 
 .blog-description :hover {
@@ -285,7 +288,7 @@ body {
     gap: 2.5em;
     width: 70%;
     flex: 2;
-
+    
 }
 
 .two-columns img {
@@ -334,6 +337,9 @@ body {
     top: 20vh;
 
 }
+.news-author-subscription{
+    display: flex;
+}
 
 .four-columns-footer {
     display: flex;
@@ -342,7 +348,7 @@ body {
     gap: 6rem;
     flex: 1;
     margin-bottom: 5%;
-
+    font-size: 0.8rem;
 }
 
 .four-columns-footer img {
